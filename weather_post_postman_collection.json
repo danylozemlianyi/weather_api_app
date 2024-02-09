@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "996f23f2-7592-4c82-83bf-b4416d1c3395",
+		"name": "KMA L2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32617238"
+	},
+	"item": [
+		{
+			"name": "get_weather",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"\",\n    \"requester_name\": \"Danylo Zemlianyi\",\n    \"city\": \"Kyiv\",\n    \"date\": \"2024-02-10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://<ip>:8000/weather",
+					"protocol": "http",
+					"host": [
+						"<ip>"
+					],
+					"port": "8000",
+					"path": [
+						"weather"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1"
+		},
+		{
+			"key": "base_url",
+			"value": "https://postman-rest-api-learner.glitch.me/"
+		}
+	]
+}
